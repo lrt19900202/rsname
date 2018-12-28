@@ -1,6 +1,26 @@
-<html>
-
-
-
-
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <script>
+    function  父母保管钱(){
+      var total=1000; 
+     return function  花压岁钱(x){  
+     total=total-x;
+     document.write(`花了${x},剩余${total}<br>`);
+     }
+    }
+  var  花压岁钱=父母保管钱();
+   花压岁钱(100);
+   花压岁钱(100);
+   console.dir(花压岁钱);
+   </script>   
+ </body>
 </html>
